@@ -32,10 +32,6 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-//    androidTestCompile('com.graandroid.support.test.espresso:espresso-core:2.2.2', {
-//        exclude group: 'com.android.support', module: 'support-annotations'
-//    })
-
     compile project(':mylibrary')
     compile 'com.android.support:appcompat-v7:23.0.0-alpha1'
     compile 'com.google.firebase:firebase-ads:10.2.1'

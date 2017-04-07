@@ -45,12 +45,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-//        Toast.makeText(this, new Joker().getJoke(), Toast.LENGTH_SHORT).show();
-//@TODO manfred shouldnt be exist
+
         new EndpointsAsyncTask(){
             @Override
             protected void onPostExecute(String result) {
-//                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(getApplicationContext(), JokeActivit.class);
                 intent.putExtra(Intent.EXTRA_TEXT,result);
                 startActivity(intent);
